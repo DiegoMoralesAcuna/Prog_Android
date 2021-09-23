@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txt_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Nombre:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Apellido:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nombre" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="207dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/txt_nombre"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="202dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/txt_apellido"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txt_genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Genero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_apellido" />
+
+    <RadioButton
+        android:id="@+id/btn_masculino"
+        android:layout_width="98dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Masculino"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_genero"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <RadioButton
+        android:id="@+id/btn_femenino"
+        android:layout_width="98dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="15dp"
+        android:text="Femenino"
+        app:layout_constraintStart_toStartOf="@id/btn_masculino"
+        app:layout_constraintTop_toBottomOf="@+id/txt_genero"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <RadioButton
+        android:id="@+id/btn_omitir"
+        android:layout_width="98dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:text="Omitir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/btn_masculino"
+        app:layout_constraintTop_toBottomOf="@+id/txt_genero"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/black"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_omitir"></LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Direccion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+        android:id="@+id/direccion"
+        android:layout_width="204dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/txt_direccion"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/hogar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Hogar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_direccion" />
+
+    <CheckBox
+        android:id="@+id/trabajo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:text="Trabajo"
+        app:layout_constraintStart_toEndOf="@+id/hogar"
+        app:layout_constraintTop_toBottomOf="@+id/direccion" />
+
+    <CheckBox
+        android:id="@+id/urbano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:text="Urbano"
+        app:layout_constraintStart_toEndOf="@+id/trabajo"
+        app:layout_constraintTop_toBottomOf="@+id/direccion" />
+
+    <CheckBox
+        android:id="@+id/limit_urbano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:text="Limite Urbano"
+        app:layout_constraintStart_toEndOf="@+id/urbano"
+        app:layout_constraintTop_toBottomOf="@+id/direccion" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hogar"></LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_condiciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Condiciones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <ScrollView
+        android:layout_width="370dp"
+        android:layout_height="274dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_condiciones"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/condiciones"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="CONDICIONES DE COMPRA Y ENVÍOS ♡Todas las ventas se realizan únicamente a través de nuestro sitio web www.kawaiitreats.cl *Los envíos a región son realizados los días MIÉRCOLES
+
+*Los envíos dentro de Santiago y a 5ta región son realizados el día JUEVES; . Esto puede ser modificado ante cualquier eventualidad y será anunciado por nuestras redes sociales.
+
+MÉTODOS DE ENVÍO ♡ BLUEXPRESS:  Todos los envíos excluyendo Santiago y 5ta región serán enviados a través de BLUEXPRESS. El tiempo promedio de entrega de encomiendas de BLUEXPRESS es de 3 a 5 días hábiles en regiones y 6 a 7 días hábiles en regiones extremas desde el envío. En algunas ocasiones bluexpress puede determinar no realizar la entrega a domicilio y despacharla a la sucursal mas cercana; a su vez también puede presentar retrasos ocasionales de hasta 10 días hábiles.
+
+Desde el momento que es despachado el paquete a través de bluexpress es responsabilidad del cliente monitorear con el código de seguimiento enviado su encomienda y ante cualquier problema o eventualidad será el cliente quien deba comunicarse con correos de chile para mantener progreso con el envío.
+
+Los envíos con bluexpress son realizados los días MIÉRCOLES EL TIEMPO QUE MANEJA BLUEXPRESS ES DETERMINADO POR ELLOS. Nosotros podemos hacer un estimado, pero no somos la empresa de transporte.
+
+Cualquier demora desde el momento del envío es responsabilidad de la empresa mencionada anteriormente." />
+
+            <CheckBox
+                android:id="@+id/condicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acepto las condiciones" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONFIRMAR PEDIDO" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

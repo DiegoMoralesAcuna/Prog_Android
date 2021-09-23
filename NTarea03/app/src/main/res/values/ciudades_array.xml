@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ciudades_array">
+        <item>Temuco</item>
+        <item>Pucon</item>
+        <item>Vilcun</item>
+        <item>Padre las casas</item>
+        <item>Villarrica</item>
+        <item>Lautaro</item>
+    </string-array>
+</resources>
