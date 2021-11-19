@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#AED581"
+    tools:context=".ListaCoordenadas">
+
+
+    <EditText
+        android:id="@+id/txtTipoSensor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tipo sensor"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtValorSensor2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese un valor"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtFechaSensor3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese la fecha"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtHoraSensor4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese la hora"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtObservacionSensor5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Comentarios"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnGuardarSensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:icon="@android:drawable/ic_menu_save" />
+
+
+</LinearLayout>

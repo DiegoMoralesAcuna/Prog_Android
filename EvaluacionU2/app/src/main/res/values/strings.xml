@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Registro de Sensores</string>
+    <string name="editext_sensor">Sensor:</string>
+    <string name="editext_valor">Valor:</string>
+    <string name="editext_fecha">Fecha:</string>
+    <string name="editext_hora">Hora:</string>
+    <string name="editext_observacion">Observacion:</string>
+    <string name="menu1">Nuevo Registro:</string>
+    <string name="menu2">Registro GPS:</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="0dp"
+        android:layout_height="454dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_sensores"
+            android:layout_width="410dp"
+            android:layout_height="454dp"
+            android:inputType="textMultiLine"
+            android:paddingLeft="28dp"
+            android:text="Lista de sensores:\n"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/lbl_proximidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Proximidad:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_luz"
+        app:layout_constraintStart_toEndOf="@+id/lbl_luz"
+        app:layout_constraintTop_toBottomOf="@+id/scrollview" />
+
+    <TextView
+
+
+        android:id="@+id/lbl_luz"
+        android:layout_width="63dp"
+        android:layout_height="34dp"
+        android:text="Luz:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_proximidad" />
+
+    <TextView
+        android:id="@+id/txt_proximidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="28dp"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_luz"
+        app:layout_constraintTop_toBottomOf="@+id/scrollview" />
+
+    <TextView
+        android:id="@+id/txt_luz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+
+        android:paddingLeft="28dp"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toEndOf="@+id/lbl_luz"
+        app:layout_constraintTop_toBottomOf="@+id/txt_proximidad" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

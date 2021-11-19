@@ -1,14 +1,12 @@
 package com.example.tarea03;
 
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.SyncAdapterType;
-import android.os.Bundle;
-import android.widget.Adapter;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 
 import java.util.ArrayList;
 
@@ -31,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         );
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
         spinner.setAdapter(arrayAdapter);
+
         //------------------------------------------------------------------
         recyclerView= (RecyclerView) findViewById(R.id.Recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager( this, LinearLayoutManager.VERTICAL, false));

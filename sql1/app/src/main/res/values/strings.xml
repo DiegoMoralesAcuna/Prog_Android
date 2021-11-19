@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lista</string>
+    <string name="menu_nuevo">Editar</string>
+    <string name="menu_2">Eliminar</string>
+</resources>
